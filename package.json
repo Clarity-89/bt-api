@@ -17,6 +17,10 @@
     "express-graphql": "^0.7.1",
     "graphql": "^14.1.1",
     "knex": "^0.16.3",
+    "objection": "^1.6.3",
     "pg": "^7.8.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
   }
 }
