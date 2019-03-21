@@ -4,13 +4,14 @@ exports.up = function(knex, Promise) {
       .createTable("hops", table => {
         table.increments("id").primary();
         table.string("name").notNullable();
-        table.string("description");
+        table.integer("origin").references("countries.id");
+        table.enu("purpose", ["bittering", "aroma", "bittering & aroma"]);
         table.string("alpha_acid_composition");
         table.string("beta_acid_composition");
-        table.string("origin");
-        table.enu("purpose", ["bittering", "aroma", "bittering & aroma"]);
-        table.integer("substitutes").references("hops.id");
+        table.string("description");
+        table.string("sub_names");
         table.string("beer_style");
+        table.integer("substitutes").references("hops.id");
       })
       .catch(error => console.log("error migrating hops", error))
   ]);
