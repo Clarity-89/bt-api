@@ -6,7 +6,7 @@ exports.up = function(knex, Promise) {
         table.string("name").notNullable();
         table.string("code");
       })
-      .catch(error => console.log("error migrating hops", error))
+      .catch(error => console.log("error migrating countries", error))
   ]);
 };
 
