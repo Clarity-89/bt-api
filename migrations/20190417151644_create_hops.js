@@ -11,12 +11,21 @@ exports.up = function(knex, Promise) {
         table.string("description");
         table.string("sub_names");
         table.string("beer_style");
-        table.integer("substitutes").references("hops.id");
       })
-      .catch(error => console.log("error migrating hops", error))
+      .catch(error => console.log("error migrating hops", error)),
+    knex.schema
+      .createTable("hops_substitutes", table => {
+        table.increments("id").primary();
+        table.integer("substitute").references("hops.id");
+        table.integer("hop").references("hops.id");
+      })
+      .catch(error => console.log("error migrating hop subs", error))
   ]);
 };
 
 exports.down = function(knex, Promise) {
-  return Promise.all([knex.schema.dropTable("hops")]);
+  return Promise.all([
+    knex.schema.dropTable("hops_substitutes"),
+    knex.schema.dropTable("hops")
+  ]);
 };
