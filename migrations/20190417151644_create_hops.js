@@ -16,11 +16,12 @@ exports.up = function(knex, Promise) {
         table.string("beer_style");
       })
       .catch(error => console.log("error migrating hops", error)),
+
     knex.schema
       .createTable("hops_substitutes", table => {
         table.increments("id").primary();
-        table.integer("substitute").references("hops.id");
         table.integer("hop").references("hops.id");
+        table.integer("substitute").references("hops.id");
       })
       .catch(error => console.log("error migrating hop subs", error))
   ]);
