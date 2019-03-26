@@ -82,7 +82,7 @@ exports.seed = function(knex, Promise) {
             id: 7,
             name: "Aurora",
             origin: 10,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 8.3,
             beta_acid_composition: 3.5,
             description:
@@ -106,7 +106,7 @@ exports.seed = function(knex, Promise) {
             id: 9,
             name: "Bobek",
             origin: 10,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 5.3,
             beta_acid_composition: 5.0,
             description:
@@ -166,7 +166,7 @@ exports.seed = function(knex, Promise) {
             id: 14,
             name: "Cascade - 2014-06 Hopunion",
             origin: 8,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 7.1,
             beta_acid_composition: 6.6,
             description:
@@ -178,11 +178,11 @@ exports.seed = function(knex, Promise) {
             id: 15,
             name: "Celeia",
             origin: 10,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 4.5,
             beta_acid_composition: 2.6,
             description:
-              "A bittering & aroma hops that is a hybrid between Savinjski Golding, Aurora and Slovenian wild hops.  Similar in aroma to Saaz.  ",
+              "A dual hops that is a hybrid between Savinjski Golding, Aurora and Slovenian wild hops.  Similar in aroma to Saaz.  ",
             sub_names: "Saaz, Styrian Goldings",
             beer_style: "Light lagers, Pilsners, Belgian ales."
           },
@@ -239,7 +239,7 @@ exports.seed = function(knex, Promise) {
             id: 20,
             name: "Citra",
             origin: 8,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 12.0,
             beta_acid_composition: 4.0,
             description:
@@ -322,7 +322,7 @@ exports.seed = function(knex, Promise) {
             id: 28,
             name: "First Gold",
             origin: 7,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 7.5,
             beta_acid_composition: 3.5,
             description:
@@ -351,7 +351,7 @@ exports.seed = function(knex, Promise) {
             alpha_acid_composition: 14.0,
             beta_acid_composition: 5.9,
             description:
-              "A high alpha, bittering & aroma seedless hops with a unique hop aroma.  It can be used either for bittering or as a late hop addition to provide a flavor of citrus and passionfruit to the finished beer.Aroma: Intense, pleasant, unique.",
+              "A high alpha, dual seedless hops with a unique hop aroma.  It can be used either for bittering or as a late hop addition to provide a flavor of citrus and passionfruit to the finished beer.Aroma: Intense, pleasant, unique.",
             sub_names: "",
             beer_style: ""
           },
@@ -468,7 +468,7 @@ exports.seed = function(knex, Promise) {
             id: 40,
             name: "Hallertauer, New Zealand",
             origin: 11,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 8.5,
             beta_acid_composition: 3.0,
             description:
@@ -496,7 +496,7 @@ exports.seed = function(knex, Promise) {
             alpha_acid_composition: 12.0,
             beta_acid_composition: 7.5,
             description:
-              "Good bittering & aroma hops derived from Nugget hops in Oregon (1970)Aroma: Pleasant, hoppy",
+              "Good dual hops derived from Nugget hops in Oregon (1970)Aroma: Pleasant, hoppy",
             sub_names: "Magnum or other high alpha hops",
             beer_style: "All purpose Ales, Lagers"
           },
@@ -613,7 +613,7 @@ exports.seed = function(knex, Promise) {
             id: 52,
             name: "Northdown",
             origin: 7,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 8.5,
             beta_acid_composition: 5.5,
             description:
@@ -625,7 +625,7 @@ exports.seed = function(knex, Promise) {
             id: 53,
             name: "Northern Brewer",
             origin: 6,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 8.5,
             beta_acid_composition: 4.0,
             description:
@@ -674,7 +674,7 @@ exports.seed = function(knex, Promise) {
             id: 57,
             name: "Orion",
             origin: 6,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 7.3,
             beta_acid_composition: 3.7,
             description:
@@ -722,7 +722,7 @@ exports.seed = function(knex, Promise) {
             id: 61,
             name: "Palisade - 2013-12 - ABC Holiday Party Prize ",
             origin: 8,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 7.1,
             beta_acid_composition: 7.0,
             description:
@@ -783,7 +783,7 @@ exports.seed = function(knex, Promise) {
             id: 66,
             name: "Pioneer",
             origin: 7,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 9.0,
             beta_acid_composition: 3.8,
             description:
@@ -795,11 +795,11 @@ exports.seed = function(knex, Promise) {
             id: 67,
             name: "Premiant",
             origin: 4,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 7.5,
             beta_acid_composition: 4.5,
             description:
-              "A cross between Czech aroma and bittering varieties.  bittering & aroma though its aroma is not as strong as some other Czech hops.  Use in beers where a moderate hoppy aroma is needed.  ",
+              "A cross between Czech aroma and bittering varieties.  dual though its aroma is not as strong as some other Czech hops.  Use in beers where a moderate hoppy aroma is needed.  ",
             sub_names: "Saaz",
             beer_style: "Moderate ales, lagers"
           },
@@ -938,11 +938,11 @@ exports.seed = function(knex, Promise) {
             id: 79,
             name: "Southern Cross",
             origin: 11,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 13.0,
             beta_acid_composition: 6.2,
             description:
-              'bittering & aroma with "European" flavor - from DSIR in 1994Aroma: Spicy, lemony, slight pine and wood flavors',
+              'dual with "European" flavor - from DSIR in 1994Aroma: Spicy, lemony, slight pine and wood flavors',
             sub_names: "N/A",
             beer_style: "European flavor bittering/aroma"
           },
@@ -963,7 +963,7 @@ exports.seed = function(knex, Promise) {
             id: 81,
             name: "Sterling",
             origin: 8,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 7.5,
             beta_acid_composition: 5.0,
             description:
@@ -975,13 +975,13 @@ exports.seed = function(knex, Promise) {
             id: 82,
             name: "Sticklebract",
             origin: 11,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 13.5,
             beta_acid_composition: 8.0,
             description:
               "High alpha hops from DSIR research first released in 1972.  Some of the same qualities as Northern Brewer Aroma: Pine-like with a hint of citrus",
             sub_names: "Northern Brewer",
-            beer_style: "bittering & aroma"
+            beer_style: "dual"
           },
           {
             id: 83,
@@ -1180,7 +1180,7 @@ exports.seed = function(knex, Promise) {
             id: 99,
             name: "Warrior",
             origin: 8,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 15.0,
             beta_acid_composition: 4.8,
             description:
@@ -1286,7 +1286,7 @@ exports.seed = function(knex, Promise) {
             id: 108,
             name: "Palisade",
             origin: 8,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 7.5,
             beta_acid_composition: 7.0,
             description:
@@ -1335,7 +1335,7 @@ exports.seed = function(knex, Promise) {
             id: 112,
             name: "Northern Brewer - 2013-08 - Hops Direct",
             origin: 6,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 10.1,
             beta_acid_composition: 4.0,
             description:
@@ -1383,7 +1383,7 @@ exports.seed = function(knex, Promise) {
             id: 116,
             name: "Cascade",
             origin: 8,
-            purpose: "bittering & aroma",
+            purpose: "dual",
             alpha_acid_composition: 5.5,
             beta_acid_composition: 6.0,
             description:
@@ -1399,7 +1399,7 @@ exports.seed = function(knex, Promise) {
             alpha_acid_composition: 4.0,
             beta_acid_composition: 3.5,
             description:
-              "Aroma: Delicate, mild, clean, somewhat floral -- Noble hopsExamples: Pulsner Urquell",
+              "Aroma: Delicate, mild, clean, somewhat floral -- Noble hopsExamples: Pilsner Urquell",
             sub_names: "Tettnanger, Lublin",
             beer_style: "Pilsners and Bohemian style lagers"
           },
@@ -1436,6 +1436,42 @@ exports.seed = function(knex, Promise) {
             description: "Aroma: Clean, mild, pleasant and slightly spicy",
             sub_names: "Hallertauer, Mount Liberty",
             beer_style: "Aroma and finishing hops for Lagers"
+          },
+          {
+            id: 121,
+            name: "Zagrava",
+            origin: 9,
+            purpose: "dual",
+            alpha_acid_composition: 8,
+            beta_acid_composition: 10,
+            description:
+              "An aroma variety with the big essential oil content, placed between Tradition and Spalter Select. Common known as dual purpose hop. It can be used for both bittering and flavoring beers. Aroma: spicy-floral aroma with herbal and fruits notes.",
+            sub_names: "Slavianka, Tettnanger, Saaz",
+            beer_style: "Lager"
+          },
+          {
+            id: 122,
+            name: "Slavianka",
+            origin: 9,
+            purpose: "bittering",
+            alpha_acid_composition: 5,
+            beta_acid_composition: 10,
+            description:
+              "A hop variety with high alpha acid content. Beer made of this hop has fine hop aroma and balanced bitterness. Aroma: herbal and floral with nectar notes.",
+            sub_names: "Tettnanger, Saaz",
+            beer_style: "Lager, Wheat"
+          },
+          {
+            id: 123,
+            name: "Zlato Polessia",
+            origin: 9,
+            purpose: "bittering",
+            alpha_acid_composition: 6.5,
+            beta_acid_composition: 5,
+            description:
+              "A  hop with very soft and fresh aroma, common used in traditional beer. Aroma: sweet herbal and fruits.",
+            sub_names: "Tettnanger, Saaz, Lubelski, Slavianka",
+            beer_style: "Lager, Pilsner, Wheat"
           }
         ])
       ]).catch(err => console.log("Error seeding hops", err));

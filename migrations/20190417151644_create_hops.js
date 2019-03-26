@@ -4,8 +4,11 @@ exports.up = function(knex, Promise) {
       .createTable("hops", table => {
         table.increments("id").primary();
         table.string("name").notNullable();
-        table.integer("origin").references("countries.id");
-        table.enu("purpose", ["bittering", "aroma", "bittering & aroma"]);
+        table
+          .integer("origin")
+          .references("countries.id")
+          .onDelete("CASCADE");
+        table.enu("purpose", ["bittering", "aroma", "dual"]);
         table.string("alpha_acid_composition");
         table.string("beta_acid_composition");
         table.string("description");
