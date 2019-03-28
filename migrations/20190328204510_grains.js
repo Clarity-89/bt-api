@@ -12,6 +12,7 @@ exports.up = async function(knex) {
       table.decimal("protein");
       table.integer("mash");
       table.text("description");
+      table.string("image");
     });
   } catch (e) {
     console.log("error migrating grains", error);

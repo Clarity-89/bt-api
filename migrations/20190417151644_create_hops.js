@@ -14,6 +14,7 @@ exports.up = function(knex, Promise) {
         table.string("description");
         table.string("sub_names");
         table.string("beer_style");
+        table.string("image");
       })
       .catch(error => console.log("error migrating hops", error)),
 
