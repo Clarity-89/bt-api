@@ -11,5 +11,7 @@ exports.up = function(knex, Promise) {
 };
 
 exports.down = function(knex, Promise) {
-  return Promise.all([knex.schema.dropTable("countries")]);
+  return Promise.all([
+    knex.schema.raw("DROP TABLE  if exists countries CASCADE")
+  ]);
 };

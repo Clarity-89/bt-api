@@ -20,8 +20,14 @@ exports.up = function(knex, Promise) {
     knex.schema
       .createTable("hops_substitutes", table => {
         table.increments("id").primary();
-        table.integer("hop").references("hops.id");
-        table.integer("substitute").references("hops.id");
+        table
+          .integer("hop")
+          .references("hops.id")
+          .onDelete("CASCADE");
+        table
+          .integer("substitute")
+          .references("hops.id")
+          .onDelete("CASCADE");
       })
       .catch(error => console.log("error migrating hop subs", error))
   ]);
@@ -29,7 +35,7 @@ exports.up = function(knex, Promise) {
 
 exports.down = function(knex, Promise) {
   return Promise.all([
-    knex.schema.dropTable("hops_substitutes"),
-    knex.schema.dropTable("hops")
+    knex.schema.raw("DROP TABLE if exists hops_substitutes CASCADE"),
+    knex.schema.raw("DROP TABLE  if exists hops CASCADE")
   ]);
 };

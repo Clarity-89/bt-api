@@ -313,11 +313,6 @@ exports.seed = function(knex, Promise) {
           },
           {
             hop: 28,
-            substitute: 25,
-            id: 65
-          },
-          {
-            hop: 28,
             substitute: 120,
             id: 66
           },
@@ -370,11 +365,6 @@ exports.seed = function(knex, Promise) {
             hop: 35,
             substitute: 84,
             id: 76
-          },
-          {
-            hop: 37,
-            substitute: 25,
-            id: 77
           },
           {
             hop: 37,
@@ -458,11 +448,6 @@ exports.seed = function(knex, Promise) {
           },
           {
             hop: 39,
-            substitute: 25,
-            id: 94
-          },
-          {
-            hop: 39,
             substitute: 120,
             id: 95
           },
@@ -490,11 +475,6 @@ exports.seed = function(knex, Promise) {
             hop: 43,
             substitute: 40,
             id: 100
-          },
-          {
-            hop: 43,
-            substitute: 25,
-            id: 101
           },
           {
             hop: 43,
@@ -565,11 +545,6 @@ exports.seed = function(knex, Promise) {
             hop: 49,
             substitute: 43,
             id: 115
-          },
-          {
-            hop: 49,
-            substitute: 25,
-            id: 116
           },
           {
             hop: 49,
@@ -850,11 +825,6 @@ exports.seed = function(knex, Promise) {
             hop: 82,
             substitute: 112,
             id: 172
-          },
-          {
-            hop: 83,
-            substitute: 25,
-            id: 173
           },
           {
             hop: 83,
