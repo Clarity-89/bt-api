@@ -4,7 +4,8 @@
   "description": "Api for beertato.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
   "keywords": [
     "api"
@@ -16,12 +17,16 @@
     "express": "^4.16.4",
     "express-graphql": "^0.7.1",
     "graphql": "^14.1.1",
+    "graphql-tools": "^4.0.4",
     "knex": "^0.16.3",
     "knex-migrate": "^1.7.1",
+    "merge-graphql-schemas": "^1.5.8",
     "objection": "^1.6.3",
-    "pg": "^7.8.2"
+    "pg": "^7.8.2",
+    "restify": "^8.2.0"
   },
   "devDependencies": {
+    "nodemon": "^1.18.10",
     "prettier": "^1.16.4"
   }
 }

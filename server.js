@@ -1,21 +1,32 @@
-const express = require('express');
-const express_graphql = require('express-graphql');
-const { buildSchema } = require('graphql');
+const restify = require("restify");
+const expressGraphQL = require("express-graphql");
+const { makeExecutableSchema } = require("graphql-tools");
+const typeDefs = require("./types/");
+const resolvers = require("./resolvers/");
+
 // GraphQL schema
-const schema = buildSchema(`
-    type Query {
-        message: String
-    }
-`);
-// Root resolver
-const root = {
-  message: () => 'Hello World!'
-};
+const schema = makeExecutableSchema({
+  typeDefs,
+  resolvers
+});
+
 // Create an express server and a GraphQL endpoint
-const app = express();
-app.use('/graphql', express_graphql({
-  schema: schema,
-  rootValue: root,
-  graphiql: true
-}));
-app.listen(3001, () => console.log('Express GraphQL Server Now Running On localhost:3001/graphql'));
+const app = restify.createServer();
+
+app.get(
+  "/hops",
+  expressGraphQL({
+    schema,
+    graphiql: true
+  })
+);
+app.post(
+  "/hops",
+  expressGraphQL({
+    schema,
+    graphiql: false
+  })
+);
+app.listen(3001, () =>
+  console.log("Express GraphQL Server Now Running On localhost:3001/hops")
+);
