@@ -14,19 +14,19 @@ const schema = makeExecutableSchema({
 const app = restify.createServer();
 
 app.get(
-  "/hops",
+  "/api",
   expressGraphQL({
     schema,
     graphiql: true
   })
 );
 app.post(
-  "/hops",
+  "/api",
   expressGraphQL({
     schema,
     graphiql: false
   })
 );
 app.listen(3001, () =>
-  console.log("Express GraphQL Server Now Running On localhost:3001/hops")
+  console.log("Express GraphQL Server Now Running On localhost:3001/api")
 );
