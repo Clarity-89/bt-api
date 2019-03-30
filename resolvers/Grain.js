@@ -2,25 +2,25 @@ const knex = require("../connection");
 
 module.exports = {
   Query: {
-    hop: async (root, { id }) => {
+    grain: async (parent, { id }) => {
       try {
-        const hops = await knex("hops")
+        const grains = await knex("grains")
           .select()
           .where("id", id);
-        return hops[0];
+        return grains[0];
       } catch (e) {
-        console.error("Error retrieving hop", e);
+        console.error("Error retrieving grain", e);
       }
     },
-    hops: async () => {
+    grains: async () => {
       try {
-        return await knex("hops").select();
+        return await knex("grains").select();
       } catch (e) {
-        console.error("Error fetching hops", e);
+        console.error("Error fetching grains", e);
       }
     }
   },
-  Hop: {
+  Grain: {
     origin: async ({ origin }) => {
       try {
         const origins = await knex("countries")
@@ -28,7 +28,7 @@ module.exports = {
           .where("id", origin);
         return origins[0];
       } catch (e) {
-        console.error("Error fetching origin", e);
+        console.error("Error fetching origin for grain", e);
       }
     }
   }
