@@ -1,9 +1,15 @@
 module.exports = /* GraphQL */ `
+  enum Purpose {
+    bittering
+    aroma
+    dual
+  }
+
   type Hop {
     id: String!
     name: String!
     origin: Origin
-    purpose: String
+    purpose: Purpose
     alpha_acid_composition: Float
     beta_acid_composition: Float
     description: String
