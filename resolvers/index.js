@@ -4,7 +4,8 @@ const Hop = require("./Hop");
 const Origin = require("./Origin");
 const Grain = require("./Grain");
 const Yeast = require("./Yeast");
+const Adjunct = require("./Adjunct");
 
-const resolvers = [Hop, Origin, Grain, Yeast];
+const resolvers = [Hop, Origin, Grain, Yeast, Adjunct];
 
 module.exports = mergeResolvers(resolvers);
