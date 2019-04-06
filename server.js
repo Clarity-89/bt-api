@@ -1,5 +1,6 @@
 const restify = require("restify");
 const expressGraphQL = require("express-graphql");
+const corsMiddleware = require("restify-cors-middleware");
 const { makeExecutableSchema } = require("graphql-tools");
 const typeDefs = require("./types/");
 const resolvers = require("./resolvers/");
@@ -12,6 +13,9 @@ const schema = makeExecutableSchema({
 
 // Create an express server and a GraphQL endpoint
 const app = restify.createServer();
+const cors = corsMiddleware({ origins: ["http://localhost:3000"] });
+app.pre(cors.preflight);
+app.use(cors.actual);
 
 app.get(
   "/api",
