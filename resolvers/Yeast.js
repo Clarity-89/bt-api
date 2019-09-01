@@ -14,7 +14,7 @@ module.exports = {
     },
     yeasts: async () => {
       try {
-        return await knex("yeasts").select();
+        return await knex("yeast").select();
       } catch (e) {
         console.error("Error fetching yeasts", e);
       }
