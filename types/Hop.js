@@ -18,9 +18,16 @@ module.exports = /* GraphQL */ `
     image: String
   }
 
+  type HopConnection {
+    cursor: String!
+    hasMore: Boolean!
+    hops: [Hop]!
+    totalCount: Int!
+  }
+
   type Query {
     hop(id: String!): Hop
-    hops: [Hop]
+    hops(pageSize: Int, after: String): HopConnection!
   }
 
   schema {
