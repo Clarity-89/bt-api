@@ -14,6 +14,8 @@ const schema = makeExecutableSchema({
 // Create an express server and a GraphQL endpoint
 const app = restify.createServer();
 const cors = corsMiddleware({ origins: ["http://localhost:3000"] });
+
+const port = 3001;
 app.pre(cors.preflight);
 app.use(cors.actual);
 
@@ -31,6 +33,6 @@ app.post(
     graphiql: false
   })
 );
-app.listen(3001, () =>
-  console.log("Express GraphQL Server Now Running On localhost:3001/api")
+app.listen(port, () =>
+  console.log(`Express GraphQL Server Now Running On localhost:${port}/api`)
 );
