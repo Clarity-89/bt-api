@@ -15,7 +15,7 @@ const schema = makeExecutableSchema({
 const app = restify.createServer();
 const cors = corsMiddleware({ origins: ["http://localhost:3000"] });
 
-const port = 3002;
+const port = 3005;
 app.pre(cors.preflight);
 app.use(cors.actual);
 
